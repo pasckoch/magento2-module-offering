@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Ui\Component\Category;
+namespace PascKoch\Offering\Test\Unit\Ui\Component\Category;
 
-use DnD\Offering\Ui\Component\Category\Options;
+use PascKoch\Offering\Ui\Component\Category\Options;
 use Magento\Backend\Model\Auth\Session;
 use Magento\Catalog\Model\ResourceModel\Category\CollectionFactory;
 use Magento\Framework\App\CacheInterface;

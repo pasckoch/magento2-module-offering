@@ -1,6 +1,6 @@
 <?php
 
-namespace DnD\Offering\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Controller\Adminhtml\Offer;
 
 use Magento\Backend\App\Action;
 

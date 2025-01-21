@@ -1,9 +1,9 @@
 <?php
 
-namespace DnD\Offering\Model\Offer\ResourceModel\Relation\Category;
+namespace PascKoch\Offering\Model\Offer\ResourceModel\Relation\Category;
 
-use DnD\Offering\Api\Data\OfferInterface;
-use DnD\Offering\Model\Offer\ResourceModel\Relation\AbstractHandler;
+use PascKoch\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Model\Offer\ResourceModel\Relation\AbstractHandler;
 use Exception;
 use Magento\Framework\Exception\LocalizedException;
 
@@ -31,7 +31,7 @@ class SaveHandler extends AbstractHandler
             if (!count($newCategories)) {
                 $newCategories = (array)$entity->getCategoryId();
             }
-            $table = $this->resource->getTable('dnd_offer_category');
+            $table = $this->resource->getTable('pasckoch_offer_category');
 
             $delete = array_diff($oldCategories, $newCategories);
             if ($delete) {

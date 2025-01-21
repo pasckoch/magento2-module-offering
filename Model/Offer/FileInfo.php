@@ -1,6 +1,6 @@
 <?php
 
-namespace DnD\Offering\Model\Offer;
+namespace PascKoch\Offering\Model\Offer;
 
 use GdImage;
 use Magento\Catalog\Model\Category\FileInfo as CategoryFileInfo;

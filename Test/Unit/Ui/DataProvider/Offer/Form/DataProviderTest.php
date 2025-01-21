@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Ui\DataProvider\Offer\Form;
+namespace PascKoch\Offering\Test\Unit\Ui\DataProvider\Offer\Form;
 
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Model\Offer\CollectionFactory;
-use DnD\Offering\Model\Offer\FileInfo;
-use DnD\Offering\Model\Offer\RedirectUrl;
-use DnD\Offering\Model\OfferFactory;
-use DnD\Offering\Ui\DataProvider\Offer\Form\DataProvider;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Model\Offer\CollectionFactory;
+use PascKoch\Offering\Model\Offer\FileInfo;
+use PascKoch\Offering\Model\Offer\RedirectUrl;
+use PascKoch\Offering\Model\OfferFactory;
+use PascKoch\Offering\Ui\DataProvider\Offer\Form\DataProvider;
 use Magento\Framework\App\Request\DataPersistorInterface;
 use Magento\Framework\App\RequestInterface;
 use Magento\Ui\DataProvider\Modifier\PoolInterface;

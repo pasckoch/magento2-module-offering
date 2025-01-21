@@ -1,9 +1,9 @@
 <?php
 
-namespace DnD\Offering\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Controller\Adminhtml\Offer;
 
-use DnD\Offering\Api\Data\OfferInterface;
-use DnD\Offering\Model\Offer\CollectionFactory;
+use PascKoch\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Model\Offer\CollectionFactory;
 use Magento\Catalog\Api\CategoryRepositoryInterface;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\Filter\FilterInput;

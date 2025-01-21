@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Test\Unit\Controller\Adminhtml\Offer;
 
-use DnD\Offering\Controller\Adminhtml\Offer\PostDataProcessor;
-use DnD\Offering\Model\Offer\CollectionFactory;
+use PascKoch\Offering\Controller\Adminhtml\Offer\PostDataProcessor;
+use PascKoch\Offering\Model\Offer\CollectionFactory;
 use Magento\Catalog\Api\CategoryRepositoryInterface;
 use Magento\Framework\Message\ManagerInterface;
 use Magento\Framework\Stdlib\DateTime\Filter\Date;

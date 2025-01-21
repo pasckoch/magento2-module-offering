@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Ui\Component\Store;
+namespace PascKoch\Offering\Test\Unit\Ui\Component\Store;
 
-use DnD\Offering\Ui\Component\Store\AllOptions;
+use PascKoch\Offering\Ui\Component\Store\AllOptions;
 use Magento\Framework\Escaper;
 use Magento\Store\Model\System\Store;
 use PHPUnit\Framework\TestCase;

@@ -1,5 +1,5 @@
 {
-    "name": "dnd/magento2-module-offering",
+    "name": "pasckoch/magento2-module-offering",
     "description": "Allows you to build a list of offers, each of which can be displayed in several categories",
     "type": "magento2-module",
     "version": "1.0.0",
@@ -18,7 +18,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "DnD\\Offering\\": ""
+            "PascKoch\\Offering\\": ""
         }
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace DnD\Offering\Api;
+namespace PascKoch\Offering\Api;
 
-use DnD\Offering\Api\Data\OfferInterface;
-use DnD\Offering\Api\Data\OfferSearchResultsInterface;
+use PascKoch\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Api\Data\OfferSearchResultsInterface;
 use Magento\Catalog\Model\Category;
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Exception\CouldNotDeleteException;

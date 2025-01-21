@@ -1,8 +1,8 @@
 <?php
 
-namespace DnD\Offering\Model\Offer;
+namespace PascKoch\Offering\Model\Offer;
 
-use DnD\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Api\Data\OfferInterface;
 use Magento\Catalog\Model\CategoryRepository;
 use Magento\Catalog\Model\ProductRepository;
 use Magento\Cms\Helper\Page;

@@ -1,6 +1,6 @@
 <?php
 
-namespace DnD\Offering\Api\Data;
+namespace PascKoch\Offering\Api\Data;
 
 interface OfferInterface
 {

@@ -10,9 +10,9 @@
     </argument>
     <settings>
         <buttons>
-            <button name="save" class="DnD\Offering\Block\Adminhtml\Offer\Edit\SaveButton"/>
-            <button name="delete" class="DnD\Offering\Block\Adminhtml\Offer\Edit\DeleteButton"/>
-            <button name="back" class="DnD\Offering\Block\Adminhtml\Offer\Edit\BackButton"/>
+            <button name="save" class="PascKoch\Offering\Block\Adminhtml\Offer\Edit\SaveButton"/>
+            <button name="delete" class="PascKoch\Offering\Block\Adminhtml\Offer\Edit\DeleteButton"/>
+            <button name="back" class="PascKoch\Offering\Block\Adminhtml\Offer\Edit\BackButton"/>
         </buttons>
         <namespace>offering_offer_form</namespace>
         <dataScope>data</dataScope>
@@ -29,7 +29,7 @@
         <settings>
             <submitUrl path="offering/offer/save"/>
         </settings>
-        <dataProvider class="DnD\Offering\Ui\DataProvider\Offer\Form\DataProvider" name="offer_form_data_source">
+        <dataProvider class="PascKoch\Offering\Ui\DataProvider\Offer\Form\DataProvider" name="offer_form_data_source">
             <settings>
                 <requestFieldName>offer_id</requestFieldName>
                 <primaryFieldName>offer_id</primaryFieldName>
@@ -136,7 +136,7 @@
                         <uploaderConfig>
                             <param xsi:type="url" name="url" path="offering/offer_image/upload"/>
                         </uploaderConfig>
-                        <previewTmpl>DnD_Offering/image-preview</previewTmpl>
+                        <previewTmpl>PascKoch_Offering/image-preview</previewTmpl>
                         <openDialogTitle>Media Gallery</openDialogTitle>
                         <allowedExtensions>jpg jpeg gif png</allowedExtensions>
                         <maxFileSize>2097152</maxFileSize>
@@ -182,7 +182,7 @@
             <formElements>
                 <select>
                     <settings>
-                        <options class="DnD\Offering\Ui\Component\Category\Options"/>
+                        <options class="PascKoch\Offering\Ui\Component\Category\Options"/>
                     </settings>
                 </select>
             </formElements>
@@ -209,7 +209,7 @@
             <formElements>
                 <multiselect>
                     <settings>
-                        <options class="DnD\Offering\Ui\Component\Store\AllOptions"/>
+                        <options class="PascKoch\Offering\Ui\Component\Store\AllOptions"/>
                     </settings>
                 </multiselect>
             </formElements>

@@ -1,6 +1,6 @@
 <?php
 
-namespace DnD\Offering\Block\Adminhtml\Offer\Edit;
+namespace PascKoch\Offering\Block\Adminhtml\Offer\Edit;
 
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
 

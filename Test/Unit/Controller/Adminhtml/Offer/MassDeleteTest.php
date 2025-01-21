@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Test\Unit\Controller\Adminhtml\Offer;
 
-use DnD\Offering\Controller\Adminhtml\Offer\MassDelete;
-use DnD\Offering\Model\Offer\CollectionFactory;
+use PascKoch\Offering\Controller\Adminhtml\Offer\MassDelete;
+use PascKoch\Offering\Model\Offer\CollectionFactory;
 use Magento\Backend\App\Action\Context;
 use Magento\Ui\Component\MassAction\Filter;
 use PHPUnit\Framework\TestCase;

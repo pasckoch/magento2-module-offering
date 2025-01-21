@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Model;
+namespace PascKoch\Offering\Test\Unit\Model;
 
-use DnD\Offering\Model\OfferSearchResult;
+use PascKoch\Offering\Model\OfferSearchResult;
 use PHPUnit\Framework\TestCase;
 
 final class OfferSearchResultTest extends TestCase

@@ -1,8 +1,8 @@
 <?php
 
-namespace DnD\Offering\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Controller\Adminhtml\Offer;
 
-use DnD\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
 use Magento\Backend\App\Action;
 use Magento\Backend\Model\View\Result\Redirect;
 use Magento\Framework\App\Action\HttpPostActionInterface;
@@ -18,7 +18,7 @@ class Delete extends Action implements HttpPostActionInterface
      *
      * @see _isAllowed()
      */
-    public const ADMIN_RESOURCE = 'DnD_Offering::offer_delete';
+    public const ADMIN_RESOURCE = 'PascKoch_Offering::offer_delete';
 
     public function __construct(
         Action\Context $context,

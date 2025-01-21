@@ -1,8 +1,8 @@
 <?php
 
-namespace DnD\Offering\Model\Offer\ResourceModel\Relation;
+namespace PascKoch\Offering\Model\Offer\ResourceModel\Relation;
 
-use DnD\Offering\Model\Offer\ResourceModel\Offer;
+use PascKoch\Offering\Model\Offer\ResourceModel\Offer;
 use Magento\Framework\EntityManager\MetadataPool;
 use Magento\Framework\EntityManager\Operation\ExtensionInterface;
 

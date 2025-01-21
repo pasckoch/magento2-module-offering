@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Model\Offer\ResourceModel;
+namespace PascKoch\Offering\Test\Unit\Model\Offer\ResourceModel;
 
-use DnD\Offering\Model\Offer\ResourceModel\Offer;
+use PascKoch\Offering\Model\Offer\ResourceModel\Offer;
 use Magento\Framework\EntityManager\EntityManager;
 use Magento\Framework\EntityManager\MetadataPool;
 use Magento\Framework\Model\ResourceModel\Db\Context;

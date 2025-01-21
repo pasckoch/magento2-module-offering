@@ -1,6 +1,6 @@
 <?php
 
-namespace DnD\Offering\Ui\Component\Category;
+namespace PascKoch\Offering\Ui\Component\Category;
 
 use Magento\Backend\Model\Auth\Session;
 use Magento\Catalog\Model\Category as CategoryModel;

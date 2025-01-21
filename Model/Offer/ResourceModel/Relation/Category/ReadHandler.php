@@ -1,8 +1,8 @@
 <?php
 
-namespace DnD\Offering\Model\Offer\ResourceModel\Relation\Category;
+namespace PascKoch\Offering\Model\Offer\ResourceModel\Relation\Category;
 
-use DnD\Offering\Model\Offer\ResourceModel\Relation\AbstractHandler;
+use PascKoch\Offering\Model\Offer\ResourceModel\Relation\AbstractHandler;
 use Magento\Framework\Exception\LocalizedException;
 
 /**

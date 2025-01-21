@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Block\Category\Offer;
+namespace PascKoch\Offering\Test\Unit\Block\Category\Offer;
 
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Block\Category\Offer\View;
-use DnD\Offering\Model\Offer\FileInfo;
-use DnD\Offering\Model\Offer\RedirectUrl;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Block\Category\Offer\View;
+use PascKoch\Offering\Model\Offer\FileInfo;
+use PascKoch\Offering\Model\Offer\RedirectUrl;
 use Magento\Framework\DataObjectFactory;
 use Magento\Framework\Registry;
 use Magento\Framework\View\Element\Template\Context;

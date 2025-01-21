@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Model;
+namespace PascKoch\Offering\Test\Unit\Model;
 
-use DnD\Offering\Model\Offer;
-use DnD\Offering\Model\Offer\Image;
-use DnD\Offering\Model\Offer\RedirectUrl;
+use PascKoch\Offering\Model\Offer;
+use PascKoch\Offering\Model\Offer\Image;
+use PascKoch\Offering\Model\Offer\RedirectUrl;
 use Magento\Catalog\Api\CategoryRepositoryInterface;
 use Magento\Framework\Model\Context;
 use Magento\Framework\Registry;

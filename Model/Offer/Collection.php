@@ -1,13 +1,13 @@
 <?php
 
-namespace DnD\Offering\Model\Offer;
+namespace PascKoch\Offering\Model\Offer;
 
-use DnD\Offering\Api\Data\OfferInterface;
-use DnD\Offering\Model\Offer\ResourceModel\Offer;
+use PascKoch\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Model\Offer\ResourceModel\Offer;
 use Exception;
 use Magento\Catalog\Model\Category;
 use Magento\Framework\Exception\LocalizedException;
-use DnD\Offering\Model\Offer\ResourceModel\AbstractCollection;
+use PascKoch\Offering\Model\Offer\ResourceModel\AbstractCollection;
 use Magento\Store\Model\Store;
 
 class Collection extends AbstractCollection
@@ -19,7 +19,7 @@ class Collection extends AbstractCollection
      */
     protected function _construct(): void
     {
-        $this->_init(\DnD\Offering\Model\Offer::class, Offer::class);
+        $this->_init(\PascKoch\Offering\Model\Offer::class, Offer::class);
         $this->_setIdFieldName($this->getResource()->getIdFieldName());
     }
 

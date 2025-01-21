@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Test\Unit\Controller\Adminhtml\Offer;
 
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Controller\Adminhtml\Offer\Delete;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Controller\Adminhtml\Offer\Delete;
 use Magento\Backend\App\Action\Context;
 use PHPUnit\Framework\TestCase;
 

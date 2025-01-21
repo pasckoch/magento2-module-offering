@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Test\Unit\Controller\Adminhtml\Offer;
 
-use DnD\Offering\Controller\Adminhtml\Offer\Index;
+use PascKoch\Offering\Controller\Adminhtml\Offer\Index;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
 use PHPUnit\Framework\TestCase;

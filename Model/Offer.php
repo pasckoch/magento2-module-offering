@@ -1,10 +1,10 @@
 <?php
 
-namespace DnD\Offering\Model;
+namespace PascKoch\Offering\Model;
 
-use DnD\Offering\Api\Data\OfferInterface;
-use DnD\Offering\Model\Offer\Image;
-use DnD\Offering\Model\Offer\RedirectUrl;
+use PascKoch\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Model\Offer\Image;
+use PascKoch\Offering\Model\Offer\RedirectUrl;
 use Magento\Catalog\Api\CategoryRepositoryInterface;
 use Magento\Catalog\Model\Category;
 use Magento\Catalog\Model\ResourceModel\Category\Collection as CategoryCollection;

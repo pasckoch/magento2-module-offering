@@ -15,7 +15,7 @@ Allows you to build a list of offers, each of which can be displayed in several 
 composer require pasckoch/magento2-module-offering
 
 php bin/magento cache:clean
-php bin/magento module:enable Dnd_Offering
+php bin/magento module:enable PascKoch_Offering
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 
@@ -50,7 +50,7 @@ Permet de construire une liste d'offres, chacune pouvant être affichée dans pl
 composer require pasckoch/magento2-module-offering
 
 php bin/magento cache:clean
-php bin/magento module:enable Dnd_Offering
+php bin/magento module:enable PascKoch_Offering
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 

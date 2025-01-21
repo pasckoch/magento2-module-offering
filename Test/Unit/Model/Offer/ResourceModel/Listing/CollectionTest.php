@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Model\Offer\ResourceModel\Listing;
+namespace PascKoch\Offering\Test\Unit\Model\Offer\ResourceModel\Listing;
 
-use DnD\Offering\Model\Offer\ResourceModel\Listing\Collection;
+use PascKoch\Offering\Model\Offer\ResourceModel\Listing\Collection;
 use Magento\Framework\Data\Collection\Db\FetchStrategyInterface;
 use Magento\Framework\Data\Collection\EntityFactoryInterface;
 use Magento\Framework\EntityManager\MetadataPool;
@@ -39,13 +39,13 @@ final class CollectionTest extends TestCase
 
         $timeZone = $this->createMock(TimezoneInterface::class);
 
-        $mainTable ='dnd_offer';
+        $mainTable ='pasckoch_offer';
 
         $eventPrefix= 'offering_offer_listing_collection';
 
         $eventObject ='offer_listing_collection';
 
-        $resourceModel = 'DnD\Offering\Model\Offer\ResourceModel\Offer';
+        $resourceModel = 'PascKoch\Offering\Model\Offer\ResourceModel\Offer';
 
         $collection = new Collection($entityFactory, $logger, $fetchStrategy, $eventManager, $storeManager, $metadataPool, $mainTable, $eventPrefix, $eventObject, $resourceModel, $timeZone);
         $this->assertInstanceOf(Collection::class, $collection);

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Model\Offer\ResourceModel\Relation;
+namespace PascKoch\Offering\Test\Unit\Model\Offer\ResourceModel\Relation;
 
-use DnD\Offering\Model\Offer\ResourceModel\Offer;
-use DnD\Offering\Model\Offer\ResourceModel\Relation\AbstractHandler;
+use PascKoch\Offering\Model\Offer\ResourceModel\Offer;
+use PascKoch\Offering\Model\Offer\ResourceModel\Relation\AbstractHandler;
 use Magento\Framework\EntityManager\MetadataPool;
 use PHPUnit\Framework\TestCase;
 

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Model\Offer;
+namespace PascKoch\Offering\Test\Unit\Model\Offer;
 
-use DnD\Offering\Model\Offer\FileInfo;
+use PascKoch\Offering\Model\Offer\FileInfo;
 use Magento\Framework\File\Mime;
 use Magento\Framework\Filesystem;
 use Magento\Store\Model\StoreManagerInterface;

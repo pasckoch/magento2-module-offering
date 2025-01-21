@@ -26,7 +26,7 @@
             </storageConfig>
             <updateUrl path="mui/index/render"/>
         </settings>
-        <aclResource>DnD_Offering::offer</aclResource>
+        <aclResource>PascKoch_Offering::offer</aclResource>
         <dataProvider class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider" name="offering_offer_listing_data_source">
             <settings>
                 <requestFieldName>offer_id</requestFieldName>

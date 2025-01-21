@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Test\Unit\Controller\Adminhtml\Offer;
 
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Controller\Adminhtml\Offer\Edit;
-use DnD\Offering\Model\OfferFactory;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Controller\Adminhtml\Offer\Edit;
+use PascKoch\Offering\Model\OfferFactory;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\Registry;
 use Magento\Framework\View\Result\PageFactory;

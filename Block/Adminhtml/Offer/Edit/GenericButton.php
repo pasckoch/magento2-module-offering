@@ -1,9 +1,9 @@
 <?php
 
-namespace DnD\Offering\Block\Adminhtml\Offer\Edit;
+namespace PascKoch\Offering\Block\Adminhtml\Offer\Edit;
 
 use Magento\Backend\Block\Widget\Context;
-use DnD\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
 use Magento\Framework\Exception\NoSuchEntityException;
 
 /**

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Model\Offer;
+namespace PascKoch\Offering\Test\Unit\Model\Offer;
 
-use DnD\Offering\Model\Offer\RedirectUrl;
+use PascKoch\Offering\Model\Offer\RedirectUrl;
 use Magento\Catalog\Model\CategoryRepository;
 use Magento\Catalog\Model\ProductRepository;
 use Magento\Cms\Helper\Page;

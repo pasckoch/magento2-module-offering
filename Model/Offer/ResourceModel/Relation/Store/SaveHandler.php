@@ -1,9 +1,9 @@
 <?php
 
-namespace DnD\Offering\Model\Offer\ResourceModel\Relation\Store;
+namespace PascKoch\Offering\Model\Offer\ResourceModel\Relation\Store;
 
-use DnD\Offering\Api\Data\OfferInterface;
-use DnD\Offering\Model\Offer\ResourceModel\Relation\AbstractHandler;
+use PascKoch\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Model\Offer\ResourceModel\Relation\AbstractHandler;
 use Exception;
 use Magento\Framework\Exception\LocalizedException;
 
@@ -30,7 +30,7 @@ class SaveHandler extends AbstractHandler
             if (empty($newStores)) {
                 $newStores = (array)$entity->getStoreId();
             }
-            $table = $this->resource->getTable('dnd_offer_store');
+            $table = $this->resource->getTable('pasckoch_offer_store');
 
             $delete = array_diff($oldStores, $newStores);
             if ($delete) {

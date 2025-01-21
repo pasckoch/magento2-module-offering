@@ -1,12 +1,12 @@
 <?php
 
-namespace DnD\Offering\Block\Category\Offer;
+namespace PascKoch\Offering\Block\Category\Offer;
 
-use DnD\Offering\Api\Data\OfferInterface;
-use DnD\Offering\Api\Data\OfferSearchResultsInterface;
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Model\Offer\FileInfo;
-use DnD\Offering\Model\Offer\RedirectUrl;
+use PascKoch\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Api\Data\OfferSearchResultsInterface;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Model\Offer\FileInfo;
+use PascKoch\Offering\Model\Offer\RedirectUrl;
 use Magento\Framework\DataObject;
 use Magento\Framework\DataObjectFactory;
 use Magento\Framework\Exception\NoSuchEntityException;

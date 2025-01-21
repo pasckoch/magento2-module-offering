@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
     <!-- offer -->
-    <table name="dnd_offer" resource="default" engine="innodb" comment="Offer table">
+    <table name="pasckoch_offer" resource="default" engine="innodb" comment="Offer table">
         <column xsi:type="int" name="offer_id" unsigned="true" nullable="false" identity="true" comment="Offer Id"/>
         <column xsi:type="varchar" name="title" nullable="false" length="50" comment="Title"/>
         <column xsi:type="varchar" name="label" nullable="false" length="255" comment="Label"/>
@@ -17,24 +17,24 @@
     </table>
 
     <!-- offer category -->
-    <table name="dnd_offer_category" resource="default" engine="innodb" comment="Category offers table">
+    <table name="pasckoch_offer_category" resource="default" engine="innodb" comment="Category offers table">
         <column xsi:type="int" name="offer_id" unsigned="true" nullable="false" identity="true" comment="Offer Id"/>
         <column xsi:type="int" name="category_id" unsigned="true" nullable="false" comment="Category Id"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="offer_id"/>
             <column name="category_id"/>
         </constraint>
-        <constraint xsi:type="foreign" referenceId="DND_OFFER_CATEGORY_OFFER_ID_DND_OFFER_OFFER_ID" table="dnd_offer_category"
-                    column="offer_id" referenceTable="dnd_offer" referenceColumn="offer_id" onDelete="CASCADE"/>
-        <constraint xsi:type="foreign" referenceId="DND_OFFER_CATEGORIES_CATEGORY_ID_CATALOG_CATEGORY_ENTITY" table="dnd_offer_categories"
+        <constraint xsi:type="foreign" referenceId="PASCKOCH_OFFER_CATEGORY_OFFER_ID_PASCKOCH_OFFER_OFFER_ID" table="pasckoch_offer_category"
+                    column="offer_id" referenceTable="pasckoch_offer" referenceColumn="offer_id" onDelete="CASCADE"/>
+        <constraint xsi:type="foreign" referenceId="PASCKOCH_OFFER_CATEGORIES_CATEGORY_ID_CATALOG_CATEGORY_ENTITY" table="pasckoch_offer_categories"
                     column="category_id" referenceTable="catalog_category_entity" referenceColumn="entity_id" onDelete="CASCADE"/>
-        <index referenceId="DND_OFFER_CATEGORIES_CATEGORY_ID" indexType="btree">
+        <index referenceId="PASCKOCH_OFFER_CATEGORIES_CATEGORY_ID" indexType="btree">
             <column name="category_id"/>
         </index>
     </table>
 
     <!-- offer store -->
-    <table name="dnd_offer_store" resource="default" engine="innodb" comment="Offer To Store Linkage Table">
+    <table name="pasckoch_offer_store" resource="default" engine="innodb" comment="Offer To Store Linkage Table">
         <column xsi:type="int" name="offer_id" unsigned="true" nullable="false" identity="false"/>
         <column xsi:type="smallint" name="store_id" unsigned="true" nullable="false" identity="false"
                 comment="Store ID"/>
@@ -42,11 +42,11 @@
             <column name="offer_id"/>
             <column name="store_id"/>
         </constraint>
-        <constraint xsi:type="foreign" referenceId="DND_OFFER_STORE_OFFER_ID_DND_OFFER_OFFER_ID" table="dnd_offer_store"
-                    column="offer_id" referenceTable="dnd_offer" referenceColumn="offer_id" onDelete="CASCADE"/>
-        <constraint xsi:type="foreign" referenceId="DND_OFFER_STORE_STORE_ID_STORE_STORE_ID" table="dnd_offer_store"
+        <constraint xsi:type="foreign" referenceId="PASCKOCH_OFFER_STORE_OFFER_ID_PASCKOCH_OFFER_OFFER_ID" table="pasckoch_offer_store"
+                    column="offer_id" referenceTable="pasckoch_offer" referenceColumn="offer_id" onDelete="CASCADE"/>
+        <constraint xsi:type="foreign" referenceId="PASCKOCH_OFFER_STORE_STORE_ID_STORE_STORE_ID" table="pasckoch_offer_store"
                     column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE"/>
-        <index referenceId="DND_OFFER_STORE_STORE_ID" indexType="btree">
+        <index referenceId="PASCKOCH_OFFER_STORE_STORE_ID" indexType="btree">
             <column name="store_id"/>
         </index>
     </table>

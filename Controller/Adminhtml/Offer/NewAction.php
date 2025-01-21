@@ -1,6 +1,6 @@
 <?php
 
-namespace DnD\Offering\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Controller\Adminhtml\Offer;
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Backend\App\Action;
@@ -15,7 +15,7 @@ class NewAction extends Action implements HttpGetActionInterface
      *
      * @see _isAllowed()
      */
-    public const ADMIN_RESOURCE = 'DnD_Offering::save';
+    public const ADMIN_RESOURCE = 'PascKoch_Offering::save';
 
     /**
      * @var Forward

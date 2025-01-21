@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Block\Adminhtml\Offer\Edit;
+namespace PascKoch\Offering\Test\Unit\Block\Adminhtml\Offer\Edit;
 
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Block\Adminhtml\Offer\Edit\GenericButton;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Block\Adminhtml\Offer\Edit\GenericButton;
 use Magento\Backend\Block\Widget\Context;
 use PHPUnit\Framework\TestCase;
 

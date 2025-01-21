@@ -1,10 +1,10 @@
 <?php
 
-namespace DnD\Offering\Model\Offer\ResourceModel\Listing;
+namespace PascKoch\Offering\Model\Offer\ResourceModel\Listing;
 
-use DnD\Offering\Model\Offer\ResourceModel\Listing\Collection\SearchResultTrait;
-use DnD\Offering\Model\Offer\Collection as OfferCollection;
-use DnD\Offering\Model\Offer\ResourceModel\AbstractCollection;
+use PascKoch\Offering\Model\Offer\ResourceModel\Listing\Collection\SearchResultTrait;
+use PascKoch\Offering\Model\Offer\Collection as OfferCollection;
+use PascKoch\Offering\Model\Offer\ResourceModel\AbstractCollection;
 use Magento\Framework\Api\Search\SearchResultInterface;
 use Magento\Framework\Data\Collection\Db\FetchStrategyInterface;
 use Magento\Framework\Data\Collection\EntityFactoryInterface;

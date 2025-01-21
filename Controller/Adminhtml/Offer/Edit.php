@@ -1,10 +1,10 @@
 <?php
 
-namespace DnD\Offering\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Controller\Adminhtml\Offer;
 
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Model\OfferFactory;
-use DnD\Offering\Model\OfferRepository;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Model\OfferFactory;
+use PascKoch\Offering\Model\OfferRepository;
 use Magento\Backend\App\Action;
 use Magento\Backend\Model\View\Result\Page;
 use Magento\Backend\Model\View\Result\Redirect;
@@ -20,7 +20,7 @@ class Edit extends Action implements HttpGetActionInterface
      *
      * @see _isAllowed()
      */
-    public const ADMIN_RESOURCE = 'DnD_Offering::save';
+    public const ADMIN_RESOURCE = 'PascKoch_Offering::save';
 
     /**
      * Core registry
@@ -73,7 +73,7 @@ class Edit extends Action implements HttpGetActionInterface
         // load layout, set active menu and breadcrumbs
         /** @var Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
-        $resultPage->setActiveMenu('DnD_Offering::offering_offers')
+        $resultPage->setActiveMenu('PascKoch_Offering::offering_offers')
             ->addBreadcrumb(__('Offers'), __('Offers'))
             ->addBreadcrumb(__('Manage Offers'), __('Manage Offers'));
         return $resultPage;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Model\Offer;
+namespace PascKoch\Offering\Test\Unit\Model\Offer;
 
-use DnD\Offering\Model\Offer\Collection;
+use PascKoch\Offering\Model\Offer\Collection;
 use Magento\Framework\Data\Collection\Db\FetchStrategyInterface;
 use Magento\Framework\Data\Collection\EntityFactoryInterface;
 use Magento\Framework\EntityManager\MetadataPool;

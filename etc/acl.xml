@@ -5,9 +5,9 @@
             <resource id="Magento_Backend::admin">
                 <resource id="Magento_Backend::content">
                     <resource id="Magento_Backend::content_elements">
-                        <resource id="DnD_Offering::offer" title="Offers" translate="title" sortOrder="10">
-                            <resource id="DnD_Offering::save" title="Save Offer" translate="title" sortOrder="10"/>
-                            <resource id="DnD_Offering::offer_delete" title="Delete Offer" translate="title" sortOrder="20" />
+                        <resource id="PascKoch_Offering::offer" title="Offers" translate="title" sortOrder="10">
+                            <resource id="PascKoch_Offering::save" title="Save Offer" translate="title" sortOrder="10"/>
+                            <resource id="PascKoch_Offering::offer_delete" title="Delete Offer" translate="title" sortOrder="20" />
                         </resource>
                     </resource>
                 </resource>

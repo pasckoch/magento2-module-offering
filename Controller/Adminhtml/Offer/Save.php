@@ -1,10 +1,10 @@
 <?php
 
-namespace DnD\Offering\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Controller\Adminhtml\Offer;
 
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Api\Data\OfferInterface;
-use DnD\Offering\Model\OfferFactory;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Model\OfferFactory;
 use Magento\Backend\App\Action;
 use Magento\Backend\Model\View\Result\Redirect;
 use Magento\Framework\App\Action\HttpPostActionInterface;
@@ -27,7 +27,7 @@ class Save extends Action implements HttpPostActionInterface
      *
      * @see _isAllowed()
      */
-    public const ADMIN_RESOURCE = 'DnD_Offering::save';
+    public const ADMIN_RESOURCE = 'PascKoch_Offering::save';
 
     /**
      * @param Action\Context $context

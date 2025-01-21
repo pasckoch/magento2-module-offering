@@ -1,13 +1,13 @@
 <?php
 
-namespace DnD\Offering\Model;
+namespace PascKoch\Offering\Model;
 
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Api\Data\OfferInterface;
-use DnD\Offering\Api\Data\OfferSearchResultsInterface;
-use DnD\Offering\Api\Data\OfferSearchResultsInterfaceFactory;
-use DnD\Offering\Model\Offer\ResourceModel\Offer;
-use DnD\Offering\Model\Offer\CollectionFactory;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Api\Data\OfferSearchResultsInterface;
+use PascKoch\Offering\Api\Data\OfferSearchResultsInterfaceFactory;
+use PascKoch\Offering\Model\Offer\ResourceModel\Offer;
+use PascKoch\Offering\Model\Offer\CollectionFactory;
 use Exception;
 use Magento\Catalog\Model\Category;
 use Magento\Framework\Api\SearchCriteria\CollectionProcessorInterface;

@@ -1,14 +1,14 @@
 <?php
 
-namespace DnD\Offering\Ui\DataProvider\Offer\Form;
+namespace PascKoch\Offering\Ui\DataProvider\Offer\Form;
 
-use DnD\Offering\Model\Offer;
-use DnD\Offering\Model\Offer\FileInfo;
-use DnD\Offering\Model\Offer\RedirectUrl;
-use DnD\Offering\Api\Data\OfferInterface;
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Model\OfferFactory;
-use DnD\Offering\Model\Offer\CollectionFactory;
+use PascKoch\Offering\Model\Offer;
+use PascKoch\Offering\Model\Offer\FileInfo;
+use PascKoch\Offering\Model\Offer\RedirectUrl;
+use PascKoch\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Model\OfferFactory;
+use PascKoch\Offering\Model\Offer\CollectionFactory;
 use Magento\Framework\App\Request\DataPersistorInterface;
 use Magento\Framework\App\RequestInterface;
 use Magento\Framework\Exception\LocalizedException;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Controller\Adminhtml\Offer\Image;
+namespace PascKoch\Offering\Test\Unit\Controller\Adminhtml\Offer\Image;
 
-use DnD\Offering\Controller\Adminhtml\Offer\Image\Upload;
+use PascKoch\Offering\Controller\Adminhtml\Offer\Image\Upload;
 use Magento\Backend\App\Action\Context;
 use Magento\Catalog\Model\ImageUploader;
 use PHPUnit\Framework\TestCase;

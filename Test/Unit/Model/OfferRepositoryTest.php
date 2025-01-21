@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Model;
+namespace PascKoch\Offering\Test\Unit\Model;
 
-use DnD\Offering\Api\Data\OfferSearchResultsInterfaceFactory;
-use DnD\Offering\Model\Offer\CollectionFactory;
-use DnD\Offering\Model\Offer\ResourceModel\Offer;
-use DnD\Offering\Model\OfferFactory;
-use DnD\Offering\Model\OfferRepository;
+use PascKoch\Offering\Api\Data\OfferSearchResultsInterfaceFactory;
+use PascKoch\Offering\Model\Offer\CollectionFactory;
+use PascKoch\Offering\Model\Offer\ResourceModel\Offer;
+use PascKoch\Offering\Model\OfferFactory;
+use PascKoch\Offering\Model\OfferRepository;
 use Magento\Framework\Api\SearchCriteria\CollectionProcessorInterface;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 use Magento\Framework\Api\SortOrderBuilder;

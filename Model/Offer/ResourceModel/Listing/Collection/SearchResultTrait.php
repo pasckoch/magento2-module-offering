@@ -1,6 +1,6 @@
 <?php
 
-namespace DnD\Offering\Model\Offer\ResourceModel\Listing\Collection;
+namespace PascKoch\Offering\Model\Offer\ResourceModel\Listing\Collection;
 
 use Magento\Framework\Api\ExtensibleDataInterface;
 use Magento\Framework\Api\Search\AggregationInterface;

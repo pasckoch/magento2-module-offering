@@ -1,6 +1,6 @@
 <?php
 
-namespace DnD\Offering\Model\Offer\ResourceModel;
+namespace PascKoch\Offering\Model\Offer\ResourceModel;
 
 use Magento\Catalog\Model\Category;
 use Magento\Framework\Data\Collection\Db\FetchStrategyInterface;

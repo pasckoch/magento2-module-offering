@@ -1,6 +1,6 @@
 <?php
 
-namespace DnD\Offering\Controller\Adminhtml\Offer\Image;
+namespace PascKoch\Offering\Controller\Adminhtml\Offer\Image;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
@@ -41,7 +41,7 @@ class Upload extends Action implements HttpPostActionInterface
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('DnD_Offering::offer');
+        return $this->_authorization->isAllowed('PascKoch_Offering::offer');
     }
 
     /**

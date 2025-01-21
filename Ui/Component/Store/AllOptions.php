@@ -1,6 +1,6 @@
 <?php
 
-namespace DnD\Offering\Ui\Component\Store;
+namespace PascKoch\Offering\Ui\Component\Store;
 
 use Magento\Cms\Ui\Component\Listing\Column\Cms\Options;
 

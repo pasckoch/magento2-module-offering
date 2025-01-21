@@ -1,8 +1,8 @@
 <?php
 
-namespace DnD\Offering\Model\Offer;
+namespace PascKoch\Offering\Model\Offer;
 
-use DnD\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Api\Data\OfferInterface;
 use Exception;
 use Magento\Catalog\Model\ImageUploader;
 use Magento\Framework\App\Filesystem\DirectoryList;

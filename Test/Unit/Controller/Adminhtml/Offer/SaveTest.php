@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DnD\Offering\Test\Unit\Controller\Adminhtml\Offer;
+namespace PascKoch\Offering\Test\Unit\Controller\Adminhtml\Offer;
 
-use DnD\Offering\Api\OfferRepositoryInterface;
-use DnD\Offering\Controller\Adminhtml\Offer\PostDataProcessor;
-use DnD\Offering\Controller\Adminhtml\Offer\Save;
-use DnD\Offering\Model\OfferFactory;
+use PascKoch\Offering\Api\OfferRepositoryInterface;
+use PascKoch\Offering\Controller\Adminhtml\Offer\PostDataProcessor;
+use PascKoch\Offering\Controller\Adminhtml\Offer\Save;
+use PascKoch\Offering\Model\OfferFactory;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\App\Request\DataPersistorInterface;
 use PHPUnit\Framework\TestCase;

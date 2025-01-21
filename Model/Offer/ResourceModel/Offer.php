@@ -1,8 +1,8 @@
 <?php
 
-namespace DnD\Offering\Model\Offer\ResourceModel;
+namespace PascKoch\Offering\Model\Offer\ResourceModel;
 
-use DnD\Offering\Api\Data\OfferInterface;
+use PascKoch\Offering\Api\Data\OfferInterface;
 use Exception;
 use Magento\Framework\DB\Select;
 use Magento\Framework\EntityManager\EntityManager;
@@ -19,11 +19,11 @@ use Zend_Db_Select;
 class Offer extends AbstractDb
 {
 
-    public const TABLE_NAME = 'dnd_offer';
+    public const TABLE_NAME = 'pasckoch_offer';
 
-    public const TABLE_STORE_NAME = 'dnd_offer_store';
+    public const TABLE_STORE_NAME = 'pasckoch_offer_store';
 
-    public const TABLE_CATEGORY_NAME = 'dnd_offer_category';
+    public const TABLE_CATEGORY_NAME = 'pasckoch_offer_category';
 
     /** @var MetadataPool */
     protected MetadataPool $metadataPool;
