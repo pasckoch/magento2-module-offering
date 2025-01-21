@@ -36,8 +36,10 @@
             }
         }
     }
+}
 
-    @media screen and (max-width: 65rem) {
+@media screen and (max-width: 65rem) {
+    .slick-offers {
         .container-offer {
 
             .item {
@@ -47,11 +49,14 @@
             }
         }
     }
+}
 
-    @media screen and (max-width: 30rem) {
+@media screen and (max-width: 30rem) {
+    .slick-offers {
+        height: auto;
         .container-offer {
             flex-direction: column;
-
+            max-height: 100%;
             .item {
                 &.label {
                     display: none;
