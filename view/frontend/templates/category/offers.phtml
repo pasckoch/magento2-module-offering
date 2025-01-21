@@ -1,0 +1,47 @@
+<?php
+
+/** @var View $block */
+/** @var Escaper $escaper */
+
+use DnD\Offering\Api\Data\OfferInterface;
+use DnD\Offering\Block\Category\Offer\View;
+use Magento\Framework\Escaper;
+
+$offerCollection = $block->getOfferCollection();
+?>
+
+<?php
+if (count($offerCollection->getItems()) > 0): ?>
+    <div class="slick-offers">
+        <?php
+        /** @var OfferInterface $item */
+        foreach ($offerCollection->getItems() as $item): ?>
+            <div>
+                <div class="container-offer">
+                    <div class="item image">
+                        <?php
+                        if ($item->getImagePath()): ?>
+                            <img src="<?= $block->getUrlImage($item->getImagePath()) ?>"
+                                 alt="<?= $escaper->escapeHtmlAttr($item->getTitle()) ?>">
+                        <?php
+                        endif; ?>
+                    </div>
+                    <div class="item label"><?= $item->getLabel() ?></div>
+                    <div class="item redirect_url">
+                        <?php $targetUrl = $block->getTargetUrl($item->getRedirectUrl()); ?>
+                        <button type="button" class="btn"
+                                onclick="window.open(
+                                    '<?= $escaper->escapeUrl($targetUrl->getData('url')) ?>',
+                                    '<?= $targetUrl->getData('target') ?>'
+                                    )
+                                    ">
+                            <?= __('More') ?>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        <?php
+        endforeach; ?>
+    </div>
+<?php
+endif; ?>

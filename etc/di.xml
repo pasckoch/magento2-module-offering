@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- offer preferences -->
+    <preference for="DnD\Offering\Api\Data\OfferInterface" type="DnD\Offering\Model\Offer"/>
+    <preference for="DnD\Offering\Api\OfferRepositoryInterface" type="DnD\Offering\Model\OfferRepository"/>
+    <preference for="DnD\Offering\Api\Data\OfferSearchResultsInterface" type="DnD\Offering\Model\OfferSearchResult"/>
+
+    <!-- offer_categories preferences -->
+    <preference for="DnD\Offering\Api\Data\OfferCategoriesInterface" type="DnD\Offering\Model\OfferCategories"/>
+    <preference for="DnD\Offering\Api\OfferCategoriesRepositoryInterface" type="DnD\Offering\Model\OfferCategoriesRepository"/>
+    <preference for="DnD\Offering\Api\Data\OfferCategoriesSearchResultsInterface" type="DnD\Offering\Model\OfferCategoriesSearchResult"/>
+
+    <type name="Magento\Framework\Model\Entity\RepositoryFactory">
+        <arguments>
+            <argument name="entities" xsi:type="array">
+                <item name="DnD\Offering\Api\Data\OfferInterface" xsi:type="string">DnD\Offering\Api\OfferRepositoryInterface</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\EntityManager\MetadataPool">
+        <arguments>
+            <argument name="metadata" xsi:type="array">
+                <item name="DnD\Offering\Api\Data\OfferInterface" xsi:type="array">
+                    <item name="entityTableName" xsi:type="string">dnd_offer</item>
+                    <item name="identifierField" xsi:type="string">offer_id</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\EntityManager\Operation\ExtensionPool">
+        <arguments>
+            <argument name="extensionActions" xsi:type="array">
+                <item name="DnD\Offering\Api\Data\OfferInterface" xsi:type="array">
+                    <item name="read" xsi:type="array">
+                        <item name="storeReader" xsi:type="string">DnD\Offering\Model\Offer\ResourceModel\Relation\Store\ReadHandler</item>
+                        <item name="categoryReader" xsi:type="string">DnD\Offering\Model\Offer\ResourceModel\Relation\Category\ReadHandler</item>
+                    </item>
+                    <item name="create" xsi:type="array">
+                        <item name="storeCreator" xsi:type="string">DnD\Offering\Model\Offer\ResourceModel\Relation\Store\SaveHandler</item>
+                        <item name="categoryCreator" xsi:type="string">DnD\Offering\Model\Offer\ResourceModel\Relation\Category\SaveHandler</item>
+                    </item>
+                    <item name="update" xsi:type="array">
+                        <item name="storeUpdater" xsi:type="string">DnD\Offering\Model\Offer\ResourceModel\Relation\Store\SaveHandler</item>
+                        <item name="categoryUpdater" xsi:type="string">DnD\Offering\Model\Offer\ResourceModel\Relation\Category\SaveHandler</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\EntityManager\HydratorPool">
+        <arguments>
+            <argument name="hydrators" xsi:type="array">
+                <item name="DnD\Offering\Api\Data\OfferInterface" xsi:type="string">Magento\Framework\EntityManager\AbstractModelHydrator</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!-- offer listing -->
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="offering_offer_listing_data_source" xsi:type="string">DnD\Offering\Model\Offer\ResourceModel\Listing\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="DnD\Offering\Model\Offer\ResourceModel\Listing\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">dnd_offer</argument>
+            <argument name="eventPrefix" xsi:type="string">offering_offer_listing_collection</argument>
+            <argument name="eventObject" xsi:type="string">offer_listing_collection</argument>
+            <argument name="resourceModel" xsi:type="string">DnD\Offering\Model\Offer\ResourceModel\Offer</argument>
+        </arguments>
+    </type>
+
+    <!-- offer form -->
+    <virtualType name="DnD\Offering\OfferImageUpload" type="Magento\Catalog\Model\ImageUploader">
+        <arguments>
+            <argument name="baseTmpPath" xsi:type="string">offering/tmp/offer</argument>
+            <argument name="basePath" xsi:type="string">offering/offer</argument>
+            <argument name="allowedExtensions" xsi:type="array">
+                <item name="jpg" xsi:type="string">jpg</item>
+                <item name="jpeg" xsi:type="string">jpeg</item>
+                <item name="gif" xsi:type="string">gif</item>
+                <item name="png" xsi:type="string">png</item>
+            </argument>
+            <argument name="allowedMimeTypes" xsi:type="array">
+                <item name="jpg" xsi:type="string">image/jpg</item>
+                <item name="jpeg" xsi:type="string">image/jpeg</item>
+                <item name="gif" xsi:type="string">image/gif</item>
+                <item name="png" xsi:type="string">image/png</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <type name="DnD\Offering\Controller\Adminhtml\Offer\Image\Upload">
+        <arguments>
+            <argument name="imageUploader" xsi:type="object">DnD\Offering\OfferImageUpload</argument>
+        </arguments>
+    </type>
+
+    <type name="DnD\Offering\Model\Offer\Image">
+        <arguments>
+            <argument name="imageUploader" xsi:type="object">DnD\Offering\OfferImageUpload</argument>
+        </arguments>
+    </type>
+
+</config>

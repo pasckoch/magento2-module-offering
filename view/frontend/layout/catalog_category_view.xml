@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="DnD_Offering::css/slick-offers.css" />
+        <script src="DnD_Offering::js/slick-offers.js"/>
+    </head>
+    <body>
+        <referenceBlock name="columns.top">
+            <block class="DnD\Offering\Block\Category\Offer\View"
+                   name="category.offers"
+                   template="DnD_Offering::category/offers.phtml"
+                   before="-"/>
+        </referenceBlock>
+    </body>
+</page>

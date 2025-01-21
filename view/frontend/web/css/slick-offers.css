@@ -1,0 +1,62 @@
+
+.slick-offers {
+    visibility: hidden;
+    height: 110px;
+    margin-bottom: 20px;
+    .container-offer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.3);
+        border: 1px solid #bbbbbb;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-height: 110px;
+        .item {
+            padding: 10px;
+            text-align: center;
+
+            &.label {
+                font-size: 125%;
+                font-weight: bold;
+                flex-grow: 2;
+            }
+
+            &.image {
+                flex-shrink: 0;
+                min-height: 90px;
+
+                img {
+                    height: 90px;
+                }
+            }
+
+            &.redirect_url {
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 65rem) {
+        .container-offer {
+
+            .item {
+                &.label {
+                    font-size: 90%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 30rem) {
+        .container-offer {
+            flex-direction: column;
+
+            .item {
+                &.label {
+                    display: none;
+                }
+            }
+        }
+    }
+}
