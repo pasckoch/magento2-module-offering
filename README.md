@@ -12,7 +12,7 @@ Allows you to build a list of offers, each of which can be displayed in several 
 ```shell
 # You must be in Magento root directory
 # Use your composer login and password available in your customer account on Owebia Store
-composer require dnd/magento2-module-offering
+composer require pasckoch/magento2-module-offering
 
 php bin/magento cache:clean
 php bin/magento module:enable Dnd_Offering
@@ -47,7 +47,7 @@ Permet de construire une liste d'offres, chacune pouvant être affichée dans pl
 ```shell
 # Vous devez être dans le répertoire racine de Magento
 # Utilisez vos login et mot de passe composer disponibles dans votre espace client sur Owebia Store
-composer require dnd/magento2-module-offering
+composer require pasckoch/magento2-module-offering
 
 php bin/magento cache:clean
 php bin/magento module:enable Dnd_Offering
